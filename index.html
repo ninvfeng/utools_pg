@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        utools.onPluginEnter(({ code, type, payload, option }) => {
+            if (payload != 'gpt' && payload != 'Free2gpt' && payload != 'chatgpt' && payload != 'ai') {
+                utools.ubrowser.goto('https://chatz.free2gpt.xyz')
+                    .value('textarea', payload)
+                    .click('button.w-28')
+                    .run({ width: 1000, height: 600 })
+            } else {
+                utools.ubrowser.goto('https://chatz.free2gpt.xyz')
+                    .run({ width: 1000, height: 600 })
+            }
+        })
+    </script>
+</body>
+
+</html>

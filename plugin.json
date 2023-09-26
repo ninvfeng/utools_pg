@@ -1,0 +1,22 @@
+{
+	"main": "index.html",
+	"logo": "logo.png",
+	"features": [
+		{
+		  "code": "free2gpt",
+		  "explain": "完全免费 无需魔法 无需登录 120次/天的ChatGPT公益站",
+			"cmds":[
+                "gpt", 
+                "Free2gpt",
+                "chatgpt",
+                "ai",
+                {
+                    "type": "over",
+                    "label": "发送到Free2gpt",
+                    "minLength": 1,
+                    "maxLength": 500
+                }
+            ]
+		}
+	]
+}
